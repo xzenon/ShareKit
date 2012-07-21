@@ -712,7 +712,7 @@
 #pragma mark Delegate Notifications
 
 - (void)sendDidStart
-{		
+{
     [[NSNotificationCenter defaultCenter] postNotificationName:@"SHKSendDidStartNotification" object:self];
     
 	if ([self.shareDelegate respondsToSelector:@selector(sharerStartedSending:)])

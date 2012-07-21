@@ -176,7 +176,14 @@
 	}	
 	else if (item.shareType == SHKShareTypeImage && item.image)
 	{	
-		[self sendImageAction];
+        // Notify delegate
+        [self sendDidStart];
+        
+        //CUSTOMIZATION: async
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            [self sendImageAction];
+        });
+		
 		return YES;
 	}
 	else if (item.shareType == SHKShareTypeUserInfo)
@@ -257,12 +264,18 @@
 
 	if(errorMsg) 
 	{
-		[self sendDidFailWithError:[NSError errorWithDomain:errorMsg code:1 userInfo:[NSDictionary dictionary]]];
+        //CUSTOMIZATION: async to main
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self sendDidFailWithError:[NSError errorWithDomain:errorMsg code:1 userInfo:[NSDictionary dictionary]]];
+        });
 		return NO;
 	} 
 	else 
 	{
-		[self sendDidFinish];
+        //CUSTOMIZATION: async to main
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self sendDidFinish];
+        });
 		return YES;
 	}	
 }
@@ -270,8 +283,8 @@
 - (void) getCaptcha 
 {
 	NSString *captcha_img = [[NSUserDefaults standardUserDefaults] objectForKey:@"captcha_img"];
-	UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Введите код:\n\n\n\n\n"
-																												message:@"\n" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+	UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Enter code:\n\n\n\n\n"
+                                                          message:@"\n" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
 	
 	UIImageView *imageView = [[[UIImageView alloc] initWithFrame:CGRectMake(12.0, 45.0, 130.0, 50.0)] autorelease];
 	imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:captcha_img]]];

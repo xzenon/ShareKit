@@ -56,6 +56,10 @@
 		vkWebView.scalesPageToFit = YES;
 		self.vkWebView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 		[self.view addSubview:vkWebView];
+        
+        //CUSTOMIZATION: added 'cancel' button to dismiss modal view
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:SHKLocalizedString(@"Cancel", nil) style:UIBarButtonSystemItemCancel 
+                                                                                target:self action:@selector(back:)];
 	}
 	
 	if(!appID) 
@@ -68,6 +72,11 @@
 	
 	[vkWebView loadRequest:[NSURLRequest requestWithURL:url]];
 	
+}
+
+- (void)back:(id)sender
+{
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (void)viewDidUnload

@@ -100,7 +100,7 @@
 	self.tableView.allowsSelectionDuringEditing = YES;
 	self.tableData = [NSMutableArray arrayWithCapacity:0];
 	[tableData addObject:[self section:@"actions"]];
-	[tableData addObject:[self section:@"services"]];
+	//[tableData addObject:[self section:@"services"]];
     
 	// Handling Excluded items
 	// If in editing mode, show them

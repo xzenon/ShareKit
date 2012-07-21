@@ -100,6 +100,8 @@
 	self.tableView.allowsSelectionDuringEditing = YES;
 	self.tableData = [NSMutableArray arrayWithCapacity:0];
 	[tableData addObject:[self section:@"actions"]];
+
+    //CUSTOMIZATION: do not display services section at all
 	//[tableData addObject:[self section:@"services"]];
     
 	// Handling Excluded items

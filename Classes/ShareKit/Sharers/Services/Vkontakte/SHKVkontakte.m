@@ -179,7 +179,7 @@
         // Notify delegate
         [self sendDidStart];
         
-        //CUSTOMIZATION: async
+        //CUSTOMIZATION: make async request to upload the image
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             [self sendImageAction];
         });
@@ -264,7 +264,7 @@
 
 	if(errorMsg) 
 	{
-        //CUSTOMIZATION: async to main
+        //CUSTOMIZATION: dispatch to main thread
         dispatch_async(dispatch_get_main_queue(), ^{
             [self sendDidFailWithError:[NSError errorWithDomain:errorMsg code:1 userInfo:[NSDictionary dictionary]]];
         });
@@ -272,7 +272,7 @@
 	} 
 	else 
 	{
-        //CUSTOMIZATION: async to main
+        //CUSTOMIZATION: dispatch to main thread
         dispatch_async(dispatch_get_main_queue(), ^{
             [self sendDidFinish];
         });

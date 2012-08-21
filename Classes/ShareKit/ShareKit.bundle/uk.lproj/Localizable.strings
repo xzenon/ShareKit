@@ -1,91 +1,91 @@
 // https://github.com/zysoft/ShareKit/commit/7c90a4a5c62bf9f8aeed938117b3a13d87ea847a
 
-"Email" = "Email";
-"Username" = "Имя";
+"Email" = "E-mail";
+"Username" = "Им'я";
 "Password" = "Пароль";
 "Follow %@" = "Follow %@";
-"Continue" = "Продолжить";
-"Share" = "Отправить";
-"More..." = "Другие...";
-"Cancel" = "Отмена";
+"Continue" = "Далі";
+"Share" = "Відправити";
+"More..." = "Інші...";
+"Cancel" = "Скасувати";
 "Slug" = "Slug";
-"Private" = "Личное";
-"Public" = "Открытое";
+"Private" = "Особисте";
+"Public" = "Відкрите";
 "Caption" = "Заголовок";
-"Title" = "Название";
+"Title" = "Назва";
 "Tags" = "Теги";
-"Close" = "Закрыть";
-"Notes" = "Заметки";
-"Note" = "Заметка";
-"Share" = "Отправить";
-"Shared" = "Отправлено";
+"Close" = "Закрити";
+"Notes" = "Замітки";
+"Note" = "Замітка";
+"Share" = "Відправити до";
+"Shared" = "Відправлено";
 "Edit" = "Редактировать";
-"Actions" = "Действия";
-"Services" = "Сервисы";
-"Send to %@" = "Отправить %@";
-"Copy" = "Копировать";
-"Copied!" = "Скопировано!";
-"Saving to %@" = "Отправить на %@";
-"Saved!" = "Отправлено!";
-"Offline" = "Нет сети";
-"Error" = "Ошибка";
-"Login" = "Вход";
-"Logging In..." = "Подключение...";
-"Login Error" = "Ошибка входа";
-"Connecting..." = "Подключение...";
+"Actions" = "Дії";
+"Services" = "Сервіси";
+"Send to %@" = "Відправити %@";
+"Copy" = "Копіювати";
+"Copied!" = "Скопійовано!";
+"Saving to %@" = "Відправити на %@";
+"Saved!" = "Відправлено!";
+"Offline" = "Немає мережі";
+"Error" = "Помилка";
+"Login" = "Вхід";
+"Logging In..." = "Підключення...";
+"Login Error" = "Помилка входу";
+"Connecting..." = "Підключення...";
 
-"Shortening URL..." = "Сокращаю ссылку...";
-"Shorten URL Error" = "Ошибка сокращения ссылки";
-"We could not shorten the URL." = "Невозможно сократить ссылку.";
+"Shortening URL..." = "Скорочую посилання...";
+"Shorten URL Error" = "Помилка скорочення посилання";
+"We could not shorten the URL." = "Неможливо скоротити посилання.";
 
-"Create a free account at %@" = "Создать бесплатный аккаунт на %@";
-"Create an account at %@" = "Создать аккаунт на %@";
+"Create a free account at %@" = "Створити безкоштовний акаунт на %@";
+"Create an account at %@" = "Створити акаунт на %@";
 
-"Send to Twitter" = "Отправить в Twitter";
+"Send to Twitter" = "Відправити до Twitter";
 
-"Message is too long" = "Слишком длинное сообщение";
-"Twitter posts can only be 140 characters in length." = "Twitter посты могут быть не длиннее 140 символов.";
-"Message is empty" = "Пустое сообщение";
-"You must enter a message in order to post." = "Вы должны ввести сообщение.";
+"Message is too long" = "Повідомлення надто довге";
+"Twitter posts can only be 140 characters in length." = "Twitter-повідомлення повинні бути не довше 140 символів.";
+"Message is empty" = "Порожнє повідомлення";
+"You must enter a message in order to post." = "Ви повинні ввести повідомлення.";
 
-"Enter your message:" = "Ваше сообщение:";
+"Enter your message:" = "Ваше повідомлення:";
 
-"Invalid email or password." = "Неверный email или пароль.";
-"The service encountered an error. Please try again later." = "У сервиса произошла ошибка. Попробуйте, пожалуйста, позже.";
-"There was a sending your post to Tumblr." = "Произошла ошибка при oтправке на Tumblr.";
+"Invalid email or password." = "Невірний email чи пароль.";
+"The service encountered an error. Please try again later." = "Помилка сервіса. Спробуйте пізніше, будь ласка.";
+"There was a sending your post to Tumblr." = "Помилка при відправленні до Tumblr.";
 
-"There was an error saving to Pinboard" = "Произошла ошибка при oтправке на Pinboard";
+"There was an error saving to Pinboard" = "Помилка при відправленні до Pinboard";
 
-"Sorry, %@ did not accept your credentials. Please try again." = "Извините, но %@ не принял ваши данные. Попробуйте, пожалуйста, еще раз.";
-"Sorry, %@ encountered an error. Please try again." = "Извините, у %@ возникла ошибка. Попробуйте, пожалуйста, еще раз.";
-"There was a problem saving to %@." = "Произошла ошибка при oтправке на %@.";
+"Sorry, %@ did not accept your credentials. Please try again." = "Вибачте, але %@ не прийняв ваші дані. Спробуйте ще раз, будь ласка.";
+"Sorry, %@ encountered an error. Please try again." = "Вибачте, у %@ виникла помилка. Спробуйте ще раз, будь ласка.";
+"There was a problem saving to %@." = "Помилка при відправленні до %@.";
 
-"Incorrect username and password" = "Неверные имя и пароль";
-"There was an error logging into Google Reader" = "Ошибка входа в Google Reader";
-"There was a problem authenticating your account." = "Произошла ошибка авторизации Вашего аккаунта.";
-"There was a problem saving your note." = "Произошла ошибка при oтправке Вашей заметки.";
+"Incorrect username and password" = "Невірне им'я чи пароль";
+"There was an error logging into Google Reader" = "Помилка входу до Google Reader";
+"There was a problem authenticating your account." = "Помилка авторизації вашого акаунту.";
+"There was a problem saving your note." = "Помилка при відправленні вашої замітки.";
 
-"Open in Safari" = "Открыть в Safari";
-"Attached: %@" = "Прикреплено: %@";
+"Open in Safari" = "Відкрити у Safari";
+"Attached: %@" = "Прикріплено: %@";
 
-"You must be online to login to %@" = "Вы должны быть подключены к Интернет чтобы войти на %@";
+"You must be online to login to %@" = "Ви повинні бути підключені до Інтернету щоб увійти до %@";
 
-"Auto Share" = "Авто-отправка";
-"Enable auto share to skip this step in the future." = "Включите авто-отправку, чтобы пропустить это шаг в дальнейшем.";
+"Auto Share" = "Авто-відправлення";
+"Enable auto share to skip this step in the future." = "Увімкніть авто-відправлення, щоб пропустити цей шаг у майбутньому.";
 
-"You must be online in order to share with %@" = "Вы должны быть подключены к Интернет чтобы слать на %@";
-"There was an error while sharing" = "Произошла ошибка при oтправке";
+"You must be online in order to share with %@" = "Ви повинні бути підключені до Інтернету щоб відправляти до %@";
+"There was an error while sharing" = "Помилка при відправленні";
 
-"Could not authenticate you. Please relogin." = "Невозможно Вас аутентифицировать. Пожалуйста, войдите еще раз.";
-"There was a problem requesting authorization from %@" = "Ошибка при получении запроса аутентификации от %@";
-"Request Error" = "Ошибка запроса";
-"There was an error while sharing" = "Произошла ошибка при oтправке";
+"Could not authenticate you. Please relogin." = "Помилка аутентифікації. Будь ласка, увійдіть ще раз.";
+"There was a problem requesting authorization from %@" = "Помилка при отриманні запроса аутентифікації від %@";
+"Request Error" = "Помилка запроса";
+"There was an error while sharing" = "Помилка при відправленні";
 
-"Authorize Error" = "Ошибка авторизации";
-"There was an error while authorizing" = "Произошла ошибка при авторизации";
+"Authorize Error" = "Помилка авторизації";
+"There was an error while authorizing" = "Помилка при авторизації";
 
-"Authenticating..." = "Авторизация...";
-"There was a problem requesting access from %@" = "Произошла ошибка получения доступа к %@";
+"Authenticating..." = "Авторизація...";
+"There was a problem requesting access from %@" = "Помилка при отриманні доступу до %@";
 
-"Access Error" = "Ошибка доступа";
-"There was an error while sharing" = "Произошла ошибка при oтправке";
+"Access Error" = "Помилка доступу";
+"There was an error while sharing" = "Помилка при відправленні";

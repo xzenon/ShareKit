@@ -58,8 +58,8 @@
 		[self.view addSubview:vkWebView];
         
         //CUSTOMIZATION: added 'cancel' button to dismiss modal view
-        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:SHKLocalizedString(@"Cancel", nil) style:UIBarButtonSystemItemCancel 
-                                                                                target:self action:@selector(back:)];
+        self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:SHKLocalizedString(@"Cancel", nil) style:UIBarButtonSystemItemCancel 
+                                                                                target:self action:@selector(back:)] autorelease];
 	}
 	
 	if(!appID) 
